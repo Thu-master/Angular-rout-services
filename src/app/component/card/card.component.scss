@@ -1,0 +1,53 @@
+/* Product Grid */
+.product-grid {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 0 20px 40px;
+}
+
+.product {
+  background-color: #333;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Đổ bóng nhẹ ban đầu */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product:hover {
+  transform: translateY(-4px); /* Nhẹ nhàng nhấc lên */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Đổ bóng mạnh hơn khi hover */
+}
+
+.product img {
+  height: 100px;
+  margin-bottom: 12px;
+}
+
+.product-name {
+  font-size: 11px;
+  color: #ccc;
+  margin-bottom: 6px;
+}
+
+.product-price {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #aaa;
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+.discount {
+  color: #aaa;
+  font-size: 12px;
+  margin-left: 6px;
+}

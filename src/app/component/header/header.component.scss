@@ -1,0 +1,116 @@
+/* Navbar */
+.navbar {
+  background-color: #111;
+  padding: 0 20px;
+  height: 56px;
+}
+
+.navbar-content {
+  max-width: 1000px; /* hoặc 1000px nếu muốn hẹp hơn */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-left img {
+  height: 20px;
+}
+
+.navbar-brand {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.navbar-menu li a:hover {
+  background-color: #444; /* Màu nền khi hover */
+  color: #fff; /* Màu chữ khi hover */
+  padding: 4px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.navbar-menu .active a {
+  background-color: #333;
+}
+
+.navbar-icons button {
+  background-color: #222;
+  border: none;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+.navbar-icons button:hover {
+  background-color: #444; /* giống nav chữ */
+  color: white;
+  cursor: pointer;
+}
+
+/* Section Header */
+.section-header {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px; /* khoảng cách giữa icon và chữ */
+  font-size: 30px; /* tăng cỡ tổng thể */
+  font-weight: bold;
+  padding: 40px 0 20px;
+  color: white;
+}
+
+.section-header i {
+  font-size: 28px;
+  line-height: 1;
+  vertical-align: middle;
+  position: relative;
+  top: -2px; /* tinh chỉnh icon nhích lên tí */
+}
+
+.section-header span {
+  letter-spacing: 2px;
+  animation: fadeUp 0.5s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

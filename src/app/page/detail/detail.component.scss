@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+.product-page {
+  display: flex;
+  gap: 30px;
+}
+
+.product-left {
+  flex: 10;
+  padding: 10px;
+}
+
+.product-images {
+  text-align: center;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 8px;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.thumbnails img {
+  width: 60px;
+  height: auto;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+.color-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.color {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.color.blue { background-color: #0a0f29; }
+.color.silver { background-color: #cfd2d4; }
+.color.gray { background-color: #8c8c8c; }
+.color.gold { background-color: #f5e4c3; }
+
+.color.selected {
+  box-shadow: 0 0 0 3px yellow;
+}
+
+.product-right {
+  flex: 1;
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.product-title {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.promo-banner {
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.promo-banner.green {
+  background-color: #6bb300;
+  color: #fff;
+}
+
+.promo-banner.blue {
+  background-color: #00aaff;
+  color: #fff;
+}
+
+.price-section {
+  margin-top: 15px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.new-price {
+  font-size: 26px;
+  color: #ff3c00;
+  font-weight: bold;
+}
+
+.location-time {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.promotion {
+  margin-top: 20px;
+  background-color: #3a3a3a;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.vip-points {
+  margin-top: 15px;
+  background-color: #ffde59;
+  color: #000;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.actions {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buy-now {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.installment {
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.features {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #bbb;
+  list-style: none;
+  padding: 0;
+}

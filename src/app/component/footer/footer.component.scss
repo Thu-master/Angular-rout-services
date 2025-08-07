@@ -1,0 +1,157 @@
+.footer {
+  background-color: #111111;
+  color: #ccc;
+  font-size: 12px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+  min-width: 160px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  gap: 2px;
+}
+
+.logo-text .red {
+  color: red;
+}
+.logo-text .cyan {
+  color: cyan;
+}
+.logo-text .magenta {
+  color: magenta;
+}
+.logo-text .green {
+  color: limegreen;
+}
+
+.sub-logo {
+  font-size: 8px;
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.hotline a {
+  color: #4aa0ff;
+  text-decoration: none;
+}
+
+.social-title {
+  margin-top: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons .facebook {
+  background-color: #3b5998;
+}
+
+.social-icons .youtube {
+  background-color: #dad0d0;
+}
+
+.social-icons .zalo {
+  background-color: #e0e0e0;
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.col-title {
+  font-weight: bold;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 6px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.footer-bottom {
+  background-color: #222222;
+  padding: 16px 20px;
+  padding-bottom: 0px;
+  text-align: center;
+  font-size: 11px;
+  color: #aaa;
+}
+
+.footer-bottom p {
+  margin-bottom: 8px; /* Giảm từ mặc định (thường là 16px) xuống */
+}
+
+.brand-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.brand-logos img {
+  height: 48px;
+}
+
+.brand-logos .bachhoaXANH {
+  height: 73px !important; /* hoặc 56px nếu bạn muốn to hơn */
+  vertical-align: middle;
+}
+
+.brand-logos .dienmayXANH {
+  height: 28px !important; /* hoặc 56px nếu bạn muốn to hơn */
+  vertical-align: middle;
+}
+
+.brand-logos .nhathuocankhang {
+  height: 29px !important; /* hoặc 56px nếu bạn muốn to hơn */
+  vertical-align: middle;
+}
