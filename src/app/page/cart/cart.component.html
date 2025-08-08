@@ -1,4 +1,5 @@
 <div class="container">
+
   <header>
     <button type="button" aria-label="Quay lại trang chủ">
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -11,13 +12,14 @@
 
   <main>
     <!-- Product -->
+    @for (item of this.productService.cartList ; track item.id) {
     <section class="product" aria-label="Thông tin sản phẩm">
       <div class="product-top">
         <img src="https://storage.googleapis.com/a1aa/image/5fe0c482-b280-409b-6100-b5be6e155283.jpg"
              alt="MacBook Air 13 inch M4 16GB/256GB laptop front view with blue wallpaper on screen"
              class="product-img" />
         <div class="product-info">
-          <div class="product-title">MacBook Air 13 inch M4 16GB/256GB</div>
+          <div class="product-title">{{item.name}}</div>
           <div class="product-subtitle" tabindex="0" role="button" aria-expanded="false" aria-haspopup="true">
             Online giá rẻ quá
             <span>Xem chi tiết</span>
@@ -123,7 +125,7 @@
       <label class="agree"><input type="checkbox" checked />Tôi đồng ý với <a href="#">Chính sách xử lý dữ liệu cá
         nhân</a> của TopZone</label>
     </section>
-
+    }
     <button class="order-btn" type="submit">Đặt hàng</button>
     <p class="footer-text">Bạn có thể lựa chọn các hình thức thanh toán ở bước sau</p>
   </main>

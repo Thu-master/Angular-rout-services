@@ -25,4 +25,7 @@ export class DetailComponent {
     this.productDetail = this.productService.getDetailProduct(id)
     console.log(this.productDetail)
   }
+  addToCart(id: string){
+    this.productService.addProductToCart(id)
+  }
 }

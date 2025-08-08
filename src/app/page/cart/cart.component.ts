@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {ProductService} from '../../services/product.service';
+import {ProductModel} from '../../models/product.model';
 
 @Component({
   selector: 'app-cart',
@@ -7,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './cart.component.scss'
 })
 export class CartComponent {
-
+constructor(
+  public productService: ProductService,
+) {
+    console.log(this.productService.cartList);
+  // let itemList = this.productService.cartList;
+}
 }
