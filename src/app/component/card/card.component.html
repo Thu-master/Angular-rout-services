@@ -2,7 +2,7 @@
 <section class="product-grid">
   <div class="product" (click)="navigateToDetails(productInCard!.id)">
     <img
-      src="https://cdn.tgdd.vn/Products/Images/44/231244/s16/mac-air-m1-13-xam-new-650x650.png"
+      src="{{productInCard?.imageUrl}}"
       alt="Mac M1"
     />
     <p class="product-name">{{productInCard!.id}}</p>
@@ -12,27 +12,51 @@
       <span class="discount">-{{productInCard!.discount}}%</span>
     </p>
   </div>
-  <div class="product">
+<!--  <div class="product">-->
+<!--    <img-->
+<!--      src="https://cdn.tgdd.vn/Products/Images/44/289472/s16/mac-air-m2-13-xanh-new-1-650x650.png"-->
+<!--      alt="Mac M2"-->
+<!--    />-->
+<!--    <p class="product-name">{{productInCard!.id}}</p>-->
+<!--    <p class="product-price">-->
+<!--      {{productInCard!.price}}-->
+<!--      <span class="original-price">24.490.000₫</span>-->
+<!--      <span class="discount">-{{productInCard!.discount}}%</span>-->
+<!--    </p>-->
+<!--  </div>-->
+<!--  <div class="product">-->
+<!--    <img-->
+<!--      src="https://cdn.tgdd.vn/Products/Images/44/335362/s16/macbook-air-13-inch-m4-thumb-xanh-da-troi-650x650.png"-->
+<!--      alt="Mac M4"-->
+<!--    />-->
+<!--    <p class="product-name">{{productInCard!.id}}</p>-->
+<!--    <p class="product-price">-->
+<!--      {{productInCard!.price}}-->
+<!--      <span class="original-price">26.490.000₫</span>-->
+<!--    </p>-->
+<!--  </div>-->
+  <div class="product" (click)="navigateToDetails(productInCard!.id)">
     <img
-      src="https://cdn.tgdd.vn/Products/Images/44/289472/s16/mac-air-m2-13-xanh-new-1-650x650.png"
-      alt="Mac M2"
+      src="{{productInCard?.imageUrl}}"
+      alt="Mac M1"
     />
     <p class="product-name">{{productInCard!.id}}</p>
     <p class="product-price">
       {{productInCard!.price}}
-      <span class="original-price">24.490.000₫</span>
+      <span class="original-price">19.590.000₫</span>
       <span class="discount">-{{productInCard!.discount}}%</span>
     </p>
   </div>
-  <div class="product">
+  <div class="product" (click)="navigateToDetails(productInCard!.id)">
     <img
-      src="https://cdn.tgdd.vn/Products/Images/44/335362/s16/macbook-air-13-inch-m4-thumb-xanh-da-troi-650x650.png"
-      alt="Mac M4"
+      src="{{productInCard?.imageUrl}}"
+      alt="Mac M1"
     />
     <p class="product-name">{{productInCard!.id}}</p>
     <p class="product-price">
       {{productInCard!.price}}
-      <span class="original-price">26.490.000₫</span>
+      <span class="original-price">19.590.000₫</span>
+      <span class="discount">-{{productInCard!.discount}}%</span>
     </p>
   </div>
 </section>

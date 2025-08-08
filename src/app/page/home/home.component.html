@@ -1,6 +1,6 @@
 <app-main></app-main>
 <div class="home">
-  @for (item of this.productHome; track item.id){
+  @for (item of productHome; track item.id){
     <app-card [productInCard]="item"></app-card>
   }
 </div>
